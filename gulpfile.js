@@ -7,8 +7,8 @@ var	sourcemaps = require('gulp-sourcemaps');
 	// print = require('gulp-print'),
 	// concat = require('gulp-concat');
 
-var CacheBuster = require('gulp-cachebust');
-var cachebust = new CacheBuster();
+// var CacheBuster = require('gulp-cachebust');
+// var cachebust = new CacheBuster();
 var deploy      = require('gulp-gh-pages');
 
 gulp.task('default', function() {
