@@ -9,7 +9,13 @@ var gulp = require('gulp'),
 
 var CacheBuster = require('gulp-cachebust');
 var cachebust = new CacheBuster();
+var deploy      = require('gulp-gh-pages');
 
 gulp.task('default', function() {
 	console.log("hello");
+});
+
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
