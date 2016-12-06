@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
 	del = require('del'),
 	babel = require('gulp-babel'),
@@ -9,7 +8,7 @@ var gulp = require('gulp'),
 
 var CacheBuster = require('gulp-cachebust');
 var cachebust = new CacheBuster();
-var deploy      = require('gulp-gh-pages');
+var deploy = require('gulp-gh-pages');
 
 gulp.task('default', function() {
 	console.log("hello");
