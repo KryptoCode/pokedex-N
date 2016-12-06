@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps'),
-	del = require('del'),
+	// del = require('del'),
 	babel = require('gulp-babel'),
 	uglify = require('gulp-uglify'),
 	print = require('gulp-print'),
