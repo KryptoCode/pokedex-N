@@ -2,11 +2,11 @@ angular.module('pokedexN', ['ui.router', 'ngAnimate'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
-	$urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
 		.state('home', {
-			url: '/home',
+			url: '/',
 			templateUrl: '/views/home/home.html',
 			controller: 'homeCtrl'
 		}) 
