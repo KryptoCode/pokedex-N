@@ -26,7 +26,7 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 					{name: 'id', base_value: response.id}
 				],
 				name: response.name,
-				image: '/images/sprites-master/sprites/pokemon/model/' + response.id + '.png'
+				image: 'images/sprites-master/sprites/pokemon/model/' + response.id + '.png'
 				};
 
 			$scope.fullHealth = response.stats[5];

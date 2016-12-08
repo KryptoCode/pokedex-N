@@ -5,6 +5,6 @@ angular.module('pokedexN')
 		scope: {
 			health: '=',
 		},
-		templateUrl: '/directives/templates/battle.html'
+		templateUrl: 'directives/templates/battle.html'
 	}
 })

@@ -7,7 +7,7 @@
 
 .top-dex {
 	height: 260px;
-	background-image: url('/images/Pokedex_t_b.png');
+	background-image: url('images/Pokedex_t_b.png');
 	background-repeat: no-repeat;
 	background-size: 100% 260px;
 	background-position: top;
@@ -38,7 +38,7 @@
 
 .bottom-dex {
 	height: 260px;
-	background-image: url('/images/Pokedex_t_b.png');
+	background-image: url('images/Pokedex_t_b.png');
 	background-repeat: no-repeat;
 	background-size: 100% 260px;
 	background-position: top;
@@ -56,7 +56,7 @@
 .random-bt {
 	width: 100px;
 	height: 100px;
-	background-image: url('/images/pokeball-rand-bt.png');
+	background-image: url('images/pokeball-rand-bt.png');
 	background-size:contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -123,7 +123,7 @@
 	background: linear-gradient(
       rgba(228, 248, 255, 0.45), 
       rgba(228, 248, 255, 0.45)
-    ), url('/images/catch_stage.png');
+    ), url('images/catch_stage.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -203,7 +203,7 @@ original style for this button
 
 	width: 60px;
 	height: 60px;
-	background: url('/images/pokeballs_sprite.png') no-repeat;
+	background: url('images/pokeballs_sprite.png') no-repeat;
 	animation: play 0.8s steps(12) infinite;
 	z-index: 6;
 
