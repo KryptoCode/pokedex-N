@@ -24,8 +24,8 @@ angular.module('pokedexN').controller('characterCtrl', function($scope, mainServ
 
 	$scope.getPokemon($stateParams.id);
 
-	$scope.bgImage = '/images/sprites-master/sprites/pokemon/other-sprites/official-artwork/'+ $stateParams.id + '.png';
-	$scope.pmodel = '/images/sprites-master/sprites/pokemon/model/'+ $stateParams.id + '.png';
+	$scope.bgImage = 'images/sprites-master/sprites/pokemon/other-sprites/official-artwork/'+ $stateParams.id + '.png';
+	$scope.pmodel = 'images/sprites-master/sprites/pokemon/model/'+ $stateParams.id + '.png';
 
 
 	$scope.getYtubeVids = function(ytPokeId) {

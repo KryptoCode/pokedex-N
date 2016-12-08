@@ -5,7 +5,7 @@ angular.module('pokedexN').service('mainService', function($http) {
 		this.getPokemon = function(nameId) {
 			return $http({
 				method: 'GET',
-				url: 'http://pokeapi.co/api/v2/pokemon/' + nameId + '/',
+				url: 'https://pokeapi.co/api/v2/pokemon/' + nameId + '/',
 				cache: true
 			}).then(function(response) {
 				return response.data;
