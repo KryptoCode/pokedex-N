@@ -45,13 +45,16 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 
 	$scope.detectPokemon();
 
+	$scope.isDisabled = false;
 	
 	$scope.battle = function(stat, fullHealth) {
 		//generates random attack power for player to subtract against pokemon health
-		var myAttackPower = randomNumberGenerator(5, 15);
-		var pokemonHp = stat.base_value -= myAttackPower;
-		var pokemonId = $scope.pokemon[0].stats[6].base_value;
-		var pokemonName = $scope.pokemon[0].name;
+		console.log($scope.isDisabled);
+		if(!$scope.isDisabled) {
+			var myAttackPower = randomNumberGenerator(5, 15);
+			var pokemonHp = stat.base_value -= myAttackPower;
+			var pokemonId = $scope.pokemon[0].stats[6].base_value;
+			var pokemonName = $scope.pokemon[0].name;
 
 		console.log(pokemonHp);
 	
@@ -63,6 +66,7 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 				console.log('You Caught ' + $scope.pokemon[0].name + '!!');
 				$state.go('character', {id: pokemonId, name: pokemonName});
 			}
+		}
 		
 	}
 	
