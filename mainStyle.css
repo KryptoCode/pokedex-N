@@ -185,7 +185,8 @@
 .poke-ball {
 	position: absolute;
 	top: 370px;
-	left: 33px;
+	left: 50%;
+	transform: translateX(-50%);
 	z-index: 1;
 	margin: auto;
 }
