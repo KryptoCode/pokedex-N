@@ -191,14 +191,6 @@
 	margin: auto;
 }
 
-/*
-original style for this button
-.poke-ball {
-	position: relative;
-	top: 380px;
-	z-index: 1;
-	margin: auto;
-}*/
 
 .pokeball-sprite {
 
@@ -214,14 +206,6 @@ original style for this button
 	100% { background-position: -768px 0px; }
 	}
 }
-
-
-/*.pokeball-throw {
-	position: absolute;
-	top: 450px;
-	left: 110px
-	
-}*/
 
 @-webkit-keyframes throw {
 	from { left: 360px;  }
@@ -263,9 +247,24 @@ original style for this button
   }
 
 .pos-pokemon {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-55%);
 	margin: auto;
-	float: left;
+	
 }
+
+
+/*
+phone size needs to be
+
+.pos-pokemon {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-30%);
+	margin: auto;
+	
+}*/
 
 .pos-pokemon > img {
 	height: 200px;
@@ -309,23 +308,10 @@ original style for this button
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
-	/*background-image: url('/images/mewtwo.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;*/
 
 }
 
-/*test for main view animation*/
 
-
-
-
-.test-animate:hover {
-	-webkit-transform: rotate(360deg);
-	border-radius: 35%;
-	border-color: red;
-}
 
 .rotate {
 	-webkit-transition: all 0.5s ease-in-out;
@@ -361,7 +347,84 @@ original style for this button
 	margin-bottom: 25px;
 }
 
- 
+@media screen and (max-width: 987px) {
+		
+		.battle-pokemon {
+			position: relative;
+			left: 50%;
+			transform: translateX(-90%);
+			height: 200px;
+			width: 100%;
+			margin: auto;
+
+		}
+
+		.pos-pokemon {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-21%);
+		margin: auto;
+		
+	}
+
+		.pokeball-sprite {
+
+		width: 60px;
+		height: 60px;
+		background: url('images/pokeballs_sprite.png') no-repeat;
+		animation: play 0.8s steps(12) infinite;
+		z-index: 6;
+
+	}
+
+		@keyframes play {
+			100% { background-position: -768px 0px; }
+			
+		}
+
+		@-webkit-keyframes throw {
+			from { 
+				left: 275px; 
+			}
+			to { left: 470px; }
+		}
+
+		@keyframes throw {
+			from { 
+				left: 275px; 
+			}
+			to { left: 470px; }
+		}
+
+		@-webkit-keyframes bounce {
+		    from {
+		      bottom: 0;
+		      -webkit-animation-timing-function: ease-out;
+		    }
+		    50% {
+		      bottom: 300px;
+		      -webkit-animation-timing-function: ease-in;
+		    }
+		    to {
+		    	bottom: 185px;
+		    	-webkit-animation-timing-function: ease-in;
+		    }
+		  }
+		  @keyframes bounce {
+		    from {
+		      bottom: 0;
+		      animation-timing-function: ease-out;
+		    }
+		    50% {
+		      bottom: 300px;
+		      animation-timing-function: ease-in;
+		    }
+		    to {
+		    	bottom: 185px;
+		    	animation-timing-function: ease-in;
+		    }
+		  }
+}
 
 
 
