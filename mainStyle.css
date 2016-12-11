@@ -63,6 +63,96 @@
 	margin: auto;
 }
 
+.catchBg {
+	position: relative;
+	background-image: url('images/chooseBg.png');
+	background-repeat: no-repeat;
+	background-position: -10px center;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+
+}
+
+
+.chooser1 {
+	position: relative;
+	top: 62px;
+	left: 41%;
+}
+
+.chooser1 > img {
+	height: 140px;
+}
+
+.chooser2 {
+	position: relative;
+	top: 143px;
+	left: 8%;
+}
+
+.chooser2 > img {
+	height: 180px;
+}
+
+.chooser3 {
+	position: relative;
+	top: -41px;
+	left: 70%;
+}
+
+.chooser3 > img{
+	height: 186px;
+}
+
+.trainer-form-container {
+	position: relative;
+	left: 50%;
+	transform: translateX(-13%);
+
+}
+
+@keyframes hideForm {
+	from {
+		opacity: 1;
+	} to {
+		opacity: 0;
+	}
+}
+
+.trainer-form-container > form.ng-hide {
+	animation: 0.5s hideForm;
+}
+
+.trainer-form-container > form > input {
+	width: 220px;
+	height: 50px;
+	line-height: 50px;
+	border: 4px solid #E4F8FF;
+}
+
+.trainer-form-container > form > button {
+	height: 50px;
+	border: 4px solid #E4F8FF;
+	margin-left: 10px
+}
+
+.chosen-pokemon {
+	position: absolute;
+	top: 210px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 150px;
+	width: 150px;
+	background-image: url('images/sprites-master/sprites/pokemon/model/25.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+
 /*Animations*/ 
 
 .open-btn {
@@ -424,6 +514,76 @@ phone size needs to be
 		    	animation-timing-function: ease-in;
 		    }
 		  }
+		  .catchBg {
+				position: relative;
+				background-image: url('images/chooseBg.png');
+				background-repeat: no-repeat;
+				background-position: -10px center;
+				background-size: cover;
+				height: 400px;
+				width: 100%;
+
+			}
+
+			.chooser1 {
+				position: relative;
+				top: 5px;
+				left: 40%;
+			}
+
+			.chooser1 > img {
+				height: 117px;
+			}
+
+			.chooser2 {
+				position: relative;
+				top: 52px;
+				left: 6%;
+			}
+
+			.chooser2 > img {
+				height: 155px;
+			}
+
+			.chooser3 {
+				position: relative;
+				top: -100px;
+				left: 68%;
+			}
+
+			.chooser3 > img{
+				height: 155px;
+			}
+
+			.trainer-form-container {
+				position: relative;
+				left: 50%;
+				top: -100px;
+				transform: translateX(-19%);
+
+			}
+
+			.trainer-form-container > form > input {
+				width: 220px;
+				height: 50px;
+				line-height: 50px;
+				border: 4px solid #E4F8FF;
+			}
+
+			.chosen-pokemon {
+				position: absolute;
+				top: 110px;
+				left: 50%;
+				transform: translateX(-50%);
+				height: 150px;
+				width: 150px;
+				background-image: url('images/sprites-master/sprites/pokemon/model/25.png');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+
+
 }
 
 

@@ -26,4 +26,8 @@ angular.module('pokedexN').service('mainService', function($http) {
 	 		})
 		}
 
+		this.getVoice = function(words) {
+		responsiveVoice.speak(words , 'UK English Male');
+		};
+
 })

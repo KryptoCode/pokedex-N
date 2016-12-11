@@ -23,5 +23,11 @@ angular.module('pokedexN', ['ui.router', 'ngAnimate'])
 			controller: 'catchCtrl'
 		})
 
+		.state('choose', {
+			url: '/choose',
+			templateUrl: 'views/choose/choose.html',
+			controller: 'chooseCtrl'
+		})
+
 
 });
