@@ -640,6 +640,19 @@ phone size needs to be
 				background-size: contain;
 			}
 
+			.battleBtn {
+
+				top: 312px;
+
+			}
+
+
+			.myBuddy {
+
+				transform: translateX(-40%);
+
+			}
+
 
 }
 
