@@ -5,7 +5,7 @@
 			<div class="row">
 			<div class="col-md-4 col-xs-4">
 				<ul class="list-group">
-					<li class="list-group-item screen-color" ng-repeat="stat in pokemon[0].stats | limitTo: 5">
+					<li class="list-group-item screen-color" ng-repeat="stat in pokemon[0].stats | limitTo: 2">
 						<span class="badge">{{stat.base_value}}</span>
 						<p class="stats">{{stat.name}}</p>
 					</li>
@@ -14,7 +14,7 @@
 						<p class="stats">{{pokemon[0].stats[5].name}}</p>
 					</li>
 				</ul>
-				
+				<div class="myBuddy" bg-img-directive="{{myBuddy.image}}"></div>
 			</div>
 			<div class="col-md-4 col-xs-4">
 				

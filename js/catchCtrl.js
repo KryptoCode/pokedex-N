@@ -2,6 +2,12 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 
 	$scope.pokemon = [];
 	$scope.health = '100%';
+	$scope.myBuddy = {
+		id: $stateParams.id,
+		name: $stateParams.name,
+		trainer: $stateParams.trainer,
+		image: 'images/sprites-master/sprites/pokemon/back/' + $stateParams.id + '.png'
+	};
 
 
 	var randomNumberGenerator = function(min, max) {

@@ -83,6 +83,16 @@
 
 .chooser1 > img {
 	height: 140px;
+	cursor: pointer;
+}
+
+.chooser1 > img:hover {
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 33px 0px rgba(228, 248, 255, 0.67);
+    -moz-box-shadow:    0px 0px 33px 0px rgba(228, 248, 255, 0.67);
+    box-shadow:         0px 0px 33px 0px rgba(228, 248, 255, 0.67);
 }
 
 .chooser2 {
@@ -91,8 +101,19 @@
 	left: 8%;
 }
 
+
 .chooser2 > img {
 	height: 180px;
+	cursor: pointer;
+}
+
+.chooser2 > img:hover {
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 33px 0px rgba(228, 248, 255, 0.67);
+    -moz-box-shadow:    0px 0px 33px 0px rgba(228, 248, 255, 0.67);
+    box-shadow:         0px 0px 33px 0px rgba(228, 248, 255, 0.67);
 }
 
 .chooser3 {
@@ -103,6 +124,16 @@
 
 .chooser3 > img{
 	height: 186px;
+	cursor: pointer;
+}
+
+.chooser3 > img:hover {
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 33px 0px rgba(228, 248, 255, 0.67);
+    -moz-box-shadow:    0px 0px 33px 0px rgba(228, 248, 255, 0.67);
+    box-shadow:         0px 0px 33px 0px rgba(228, 248, 255, 0.67);
 }
 
 .trainer-form-container {
@@ -139,18 +170,44 @@
 
 .chosen-pokemon {
 	position: absolute;
-	top: 210px;
+	top: 154px;
 	left: 50%;
 	transform: translateX(-50%);
-	height: 150px;
+	height: 250px;
 	width: 150px;
-	background-image: url('images/sprites-master/sprites/pokemon/model/25.png');
+	/*background-image: url('images/sprites-master/sprites/pokemon/model/25.png');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: contain;*/
 }
 
+.battleBtn {
+	position: absolute;
+	top: 488px;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
+.battleBtn > button {
+	height: 50px;
+	width: 200px;
+	line-height: 32px;
+	font-size: 25px;
+	border: 4px solid #E4F8FF;
+}
+
+.myBuddy {
+	position: absolute;
+	top: 185px;
+	left: 50%;
+	transform: translateX(-28%);
+	height: 350px;
+	width: 350px;
+	/*background-image: url('images/sprites-master/sprites/pokemon/back/25.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
 
 
 /*Animations*/ 

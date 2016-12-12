@@ -18,7 +18,7 @@ angular.module('pokedexN', ['ui.router', 'ngAnimate'])
 		}) 
 
 		.state('catch', {
-			url: '/catch',
+			url: '/catch/:id/:name/:trainer',
 			templateUrl: 'views/catch/catch.html',
 			controller: 'catchCtrl'
 		})
