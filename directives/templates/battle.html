@@ -1,6 +1,9 @@
-<div class="progress">
-  <div id="pgBar" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{health}}" aria-valuemin="0" aria-valuemax="100%" style='width:{{health}}'>
-    <span class="sr-only">{{health}} Complete (success)</span>
- 
-  </div>
+<div class="healthBar">
+	<div class="progress">
+	  <div id="pgBar" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="{{health}}" aria-valuemin="0" aria-valuemax="100%" style='width:{{health}}'>
+	    <span class="sr-only">{{health}} Complete (success)</span>
+	 	
+	  </div>
+	</div>
+	<h3 class="text-center text-capitalize alert-info">{{name}}</h3>
 </div>

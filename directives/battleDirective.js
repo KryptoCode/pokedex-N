@@ -4,6 +4,7 @@ angular.module('pokedexN')
 		restrict: 'EA',
 		scope: {
 			health: '=',
+			name: '='
 		},
 		templateUrl: 'directives/templates/battle.html'
 	}

@@ -1,14 +1,22 @@
 angular.module('pokedexN').controller('catchCtrl', function($scope, mainService, $state, $stateParams, $compile) {
-
 	$scope.pokemon = [];
 	$scope.health = '100%';
+	$scope.bHealth = '100%';
 	$scope.myBuddy = {
 		id: $stateParams.id,
 		name: $stateParams.name,
 		trainer: $stateParams.trainer,
 		image: 'images/sprites-master/sprites/pokemon/back/' + $stateParams.id + '.png'
 	};
-
+	$scope.trainer = {
+				health: 500,
+				att: 30,
+				def: 30,
+				roll: function() {
+					var result = Math.floor(Math.random() * 6 + 1);
+					return result;
+				}
+			}; 
 
 	var randomNumberGenerator = function(min, max) {
 		min = Math.ceil(min);
@@ -46,7 +54,6 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 		.catch(function(response) {
 			$scope.detectPokemon();
 		})
-	
 	}
 
 	$scope.detectPokemon();
@@ -62,10 +69,10 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 			var pokemonId = $scope.pokemon[0].stats[6].base_value;
 			var pokemonName = $scope.pokemon[0].name;
 
-		console.log(pokemonHp);
+			console.log(pokemonHp);
 	
 		//converts to a percentage to be interpeted by the directive and update the health meter
-		$scope.health = ((stat.base_value / fullHealth.base_stat) * 100).toFixed(2) + '%';
+			$scope.health = ((stat.base_value / fullHealth.base_stat) * 100).toFixed(2) + '%';
 
 			if (pokemonHp <= 0) {
 
@@ -76,15 +83,18 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 		
 	}
 	
-	$scope.pokemonAI = function(statArr) {
+	// $scope.pokemonAI = function(statArr) {
+	// 	var arrLength = statArr.length;
+	// 	var hightestStat = 0;
+
+	// 	for(var i = 0; i < arrLength; i++) {
+	// 		if(statArr[i] > hightestStat) {
+	// 			hightestStat = statArr[i];
+	// 		}
+	// 	}
+	// 	console.log(statArr);
 		// take an array of stats, will focus actions based on highest stat.
 		// [[speed, special def, special att, defence, attack, hp]]
-		var motivationStat = 0;
-			for (var i = 0; i < statArr.length; i++) {
-				if(statArr[i] > motivationStat) {
-					motivationStat = statArr[i];
-				}
-			}
 		// if highest stat is 
 			// speed pokemon hits with basic attack 2 times between everyone 1 of yours.
 			// and when health is 25% pokemon has chance to run 
@@ -105,7 +115,7 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 		// stat that pokemon is using should highlight in the UI when used. optional voice narriation
 		// option sound bites and music.
 
-	}
-
+	// }
+	
 	
 });

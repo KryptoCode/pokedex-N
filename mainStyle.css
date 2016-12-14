@@ -168,6 +168,27 @@
 	margin-left: 10px
 }
 
+.healthBar {
+	position: relative;
+	top: 5px;
+	height: 53px;
+	border: 4px solid #9ce3db;
+	width: 75%;
+	margin: auto;
+}
+
+.healthBar > h3 {
+	margin: 0;
+}
+
+.progress {
+	height: 20px;
+	margin-bottom: 0px;
+	background-color: #fff;
+}
+
+
+
 .chosen-pokemon {
 	position: absolute;
 	top: 154px;
@@ -493,6 +514,8 @@ phone size needs to be
 .menu-container {
 	margin-bottom: 25px;
 }
+
+
 
 @media screen and (max-width: 987px) {
 		
