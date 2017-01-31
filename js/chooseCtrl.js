@@ -32,12 +32,16 @@ angular.module('pokedexN').controller('chooseCtrl', function($scope, mainService
 	$scope.hidePokemon = true;
 	$scope.hideForm = false;
 	$scope.hideBattleBtn = true;
+	$scope.secretPikachu = true;
+	$scope.secretMewtwo = true;
 	$scope.words = {
 		greeting: "hello pokemon trainer. Please type your name into the Pokedex.",
 		trainer: ""
 	};
 
 	$scope.pokemonBuddy = $scope.starters[num];
+	
+
 	$scope.bgImage = $scope.pokemonBuddy.image_front;
 	$scope.words.details = $scope.pokemonBuddy.bio;
 	
@@ -65,14 +69,15 @@ angular.module('pokedexN').controller('chooseCtrl', function($scope, mainService
 	}
 
 	$scope.choice = function() {
+
 		if($scope.words.trainer !== "") {
 			$scope.hidePokemon = false;
 			$scope.hideBattleBtn = false;
 			$scope.words.madeChoice = "Congradulations Pokemon Trainer " + $scope.words.trainer + "! You have chosen a " + $scope.pokemonBuddy.name + " as your starter pokemon.";
 			var speak = mainService.getVoice;
 			speak($scope.words.madeChoice);
-
 		}
+		
 	}
 
 	$scope.updateDetails = function() {

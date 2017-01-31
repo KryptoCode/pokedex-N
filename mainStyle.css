@@ -1,6 +1,6 @@
 .container {
 	padding-top: 25px;
-	max-width: 1024px;
+	max-width: 967px;
 }
 
 
@@ -79,68 +79,92 @@
 	position: relative;
 	top: 62px;
 	left: 41%;
-}
-
-.chooser1 > img {
 	height: 140px;
 	cursor: pointer;
+	background-image: url('images/sprites-master/sprites/items/dream-world/dive-ball.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
 }
 
-.chooser1 > img:hover {
-	-webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 0px 33px 0px rgba(228, 248, 255, 0.67);
-    -moz-box-shadow:    0px 0px 33px 0px rgba(228, 248, 255, 0.67);
-    box-shadow:         0px 0px 33px 0px rgba(228, 248, 255, 0.67);
+
+
+.chooser1:hover {
+	background-image: url(images/dive-ball-open.png);
 }
 
 .chooser2 {
 	position: relative;
 	top: 143px;
 	left: 8%;
-}
-
-
-.chooser2 > img {
 	height: 180px;
 	cursor: pointer;
+	background-image: url('images/sprites-master/sprites/items/dream-world/great-ball.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
 }
 
-.chooser2 > img:hover {
-	-webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 0px 33px 0px rgba(228, 248, 255, 0.67);
-    -moz-box-shadow:    0px 0px 33px 0px rgba(228, 248, 255, 0.67);
-    box-shadow:         0px 0px 33px 0px rgba(228, 248, 255, 0.67);
+
+.chooser2:hover {
+	background-image: url('images/great-ball-open.png');
 }
 
 .chooser3 {
 	position: relative;
 	top: -41px;
 	left: 70%;
-}
-
-.chooser3 > img{
 	height: 186px;
 	cursor: pointer;
+	background-image: url('images/sprites-master/sprites/items/dream-world/repeat-ball.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
 }
 
-.chooser3 > img:hover {
-	-webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 0px 33px 0px rgba(228, 248, 255, 0.67);
-    -moz-box-shadow:    0px 0px 33px 0px rgba(228, 248, 255, 0.67);
-    box-shadow:         0px 0px 33px 0px rgba(228, 248, 255, 0.67);
+
+.chooser3:hover {
+	background-image: url('images/repeat-ball-open.png');
+}
+
+.chooser4 {
+	position: relative;
+	top: -341px;
+	left: 39%;
+	height: 186px;
+	cursor: pointer;
+	background-image: url('images/sprites-master/sprites/items/dream-world/poke-ball.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+}
+
+
+.chooser4:hover {
+	background-image: url('images/poke-ball-open.png');
+}
+
+.chooser5 {
+	position: relative;
+	top: -526px;
+	left: 39%;
+	height: 186px;
+	cursor: pointer;
+	background-image: url('images/sprites-master/sprites/items/dream-world/master-ball.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+}
+
+
+.chooser5:hover {
+	background-image: url('images/master-ball-open.png');
 }
 
 .trainer-form-container {
-	position: relative;
+	position: absolute;
 	left: 50%;
-	transform: translateX(-13%);
-
+	transform: translateX(-50%);
 }
 
 @keyframes hideForm {
@@ -298,11 +322,41 @@
 	height: 500px;
 }
 
+.buddy-fight-btn {
+	height: 57px;
+	position: relative;
+	top: 568px;
+	left: 160px;
+	background-image:url('images/fight-btn.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 6;
+}
+
+.buddy-fight-btn:hover {
+	background-image:url('images/fight-btn-on.png');
+}
+
+.buddy-power-btn {
+	height: 57px;
+	position: relative;
+	top: 507px;
+	left: 416px;
+	background-image:url('images/lightning-btn.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 6;
+}
+
+.buddy-power-btn:hover {
+	background-image:url('images/lightning-btn-on.png');
+}
+
 #stage {
 	position: relative;
 	margin: 1em auto;
-/*	max-width: 800px;
-	min-width: 659px;*/
 	width: 100%;
 	height: 483px;
 	background: transparent;
@@ -607,47 +661,95 @@ phone size needs to be
 
 			.chooser1 {
 				position: relative;
-				top: 5px;
+				top: 0px;
 				left: 40%;
+				height: 121px;
+				cursor: pointer;
+				background-image: url('images/sprites-master/sprites/items/dream-world/dive-ball.png');
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: contain;
 			}
 
-			.chooser1 > img {
-				height: 117px;
+
+
+			.chooser1:hover {
+				background-image: url(images/dive-ball-open.png);
 			}
 
 			.chooser2 {
 				position: relative;
-				top: 52px;
+				top: 53px;
 				left: 6%;
+				height: 150px;
+				cursor: pointer;
+				background-image: url('images/sprites-master/sprites/items/dream-world/great-ball.png');
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: contain;
 			}
 
-			.chooser2 > img {
-				height: 155px;
+
+			.chooser2:hover {
+				background-image: url('images/great-ball-open.png');
 			}
 
 			.chooser3 {
 				position: relative;
-				top: -100px;
-				left: 68%;
+				top: -94px;
+				left: 69%;
+				height: 150px;
+				cursor: pointer;
+				background-image: url('images/sprites-master/sprites/items/dream-world/repeat-ball.png');
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: contain;
 			}
 
-			.chooser3 > img{
-				height: 155px;
+
+			.chooser3:hover {
+				background-image: url('images/repeat-ball-open.png');
+			}
+
+			.chooser4 {
+				position: relative;
+				top: -341px;
+				left: 39%;
+				height: 186px;
+				cursor: pointer;
+				background-image: url('images/sprites-master/sprites/items/dream-world/poke-ball.png');
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: contain;
+			}
+
+
+			.chooser4:hover {
+				background-image: url('images/poke-ball-open.png');
+			}
+
+			.chooser5 {
+				position: relative;
+				top: -526px;
+				left: 39%;
+				height: 186px;
+				cursor: pointer;
+				background-image: url('images/sprites-master/sprites/items/dream-world/master-ball.png');
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: contain;
+			}
+
+
+			.chooser5:hover {
+				background-image: url('images/master-ball-open.png');
 			}
 
 			.trainer-form-container {
-				position: relative;
+				position: absolute;
+				bottom: 26px;
 				left: 50%;
-				top: -100px;
-				transform: translateX(-19%);
-
-			}
-
-			.trainer-form-container > form > input {
-				width: 220px;
-				height: 50px;
-				line-height: 50px;
-				border: 4px solid #E4F8FF;
+				transform: translateX(-50%);
 			}
 
 			.chosen-pokemon {
