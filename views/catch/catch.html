@@ -15,8 +15,8 @@
 					</li>
 				</ul> -->
 				<div class="myBuddy" battle-directive health="bHealth" name="myBuddy.name" bg-img-directive="{{myBuddy.image}}"></div>
-				<div class="buddy-fight-btn"></div>
-				<div class="buddy-power-btn"></div>
+				<div ng-if="fullHealth" class="buddy-fight-btn" ng-click="quickAttack(pokemon[0].stats[5], fullHealth)"></div>
+				<div ng-if="fullHealth" class="buddy-power-btn" ng-click="powerAttack(pokemon[0].stats[5], fullHealth)"></div>
 			</div>
 			<div class="col-md-4 col-xs-4">
 				<div ng-if="fullHealth">

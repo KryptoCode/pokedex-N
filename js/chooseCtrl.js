@@ -77,7 +77,7 @@ angular.module('pokedexN').controller('chooseCtrl', function($scope, mainService
 			var speak = mainService.getVoice;
 			speak($scope.words.madeChoice);
 		}
-		
+
 	}
 
 	$scope.updateDetails = function() {

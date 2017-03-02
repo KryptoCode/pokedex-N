@@ -82,7 +82,17 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 		}
 		
 	}
-	
+
+	$scope.quickAttack = function(stat, fullHealth) {
+		$scope.battle(stat, fullHealth);
+		console.log("quick attack");
+	}
+
+	$scope.powerAttack = function(stat, fullHealth) {
+        $scope.battle(stat, fullHealth);
+		console.log("power attack");
+	}
+
 	// $scope.pokemonAI = function(statArr) {
 	// 	var arrLength = statArr.length;
 	// 	var hightestStat = 0;

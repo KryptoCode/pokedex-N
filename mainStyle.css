@@ -89,26 +89,26 @@
 
 
 
-.chooser1:hover {
-	background-image: url(images/dive-ball-open.png);
-}
+/*.chooser1:hover {*/
+	/*background-image: url(images/dive-ball-open.png);*/
+/*}*/
 
 .chooser2 {
 	position: relative;
 	top: 143px;
-	left: 8%;
-	height: 180px;
+	right: 70%;
+	height: 185px;
 	cursor: pointer;
 	background-image: url('images/sprites-master/sprites/items/dream-world/great-ball.png');
 	background-repeat: no-repeat;
-	background-position: left center;
+	background-position: right center;
 	background-size: contain;
 }
 
 
-.chooser2:hover {
-	background-image: url('images/great-ball-open.png');
-}
+/*.chooser2:hover {*/
+	/*background-image: url('images/great-ball-open.png');*/
+/*}*/
 
 .chooser3 {
 	position: relative;
@@ -123,9 +123,9 @@
 }
 
 
-.chooser3:hover {
-	background-image: url('images/repeat-ball-open.png');
-}
+/*.chooser3:hover {*/
+	/*background-image: url('images/repeat-ball-open.png');*/
+/*}*/
 
 .chooser4 {
 	position: relative;
@@ -140,9 +140,9 @@
 }
 
 
-.chooser4:hover {
-	background-image: url('images/poke-ball-open.png');
-}
+/*.chooser4:hover {*/
+	/*background-image: url('images/poke-ball-open.png');*/
+/*}*/
 
 .chooser5 {
 	position: relative;
@@ -157,9 +157,9 @@
 }
 
 
-.chooser5:hover {
-	background-image: url('images/master-ball-open.png');
-}
+/*.chooser5:hover {*/
+	/*background-image: url('images/master-ball-open.png');*/
+/*}*/
 
 .trainer-form-container {
 	position: absolute;
@@ -680,12 +680,12 @@ phone size needs to be
 			.chooser2 {
 				position: relative;
 				top: 53px;
-				left: 6%;
+				right: 70%;
 				height: 150px;
 				cursor: pointer;
 				background-image: url('images/sprites-master/sprites/items/dream-world/great-ball.png');
 				background-repeat: no-repeat;
-				background-position: left center;
+				background-position: right center;
 				background-size: contain;
 			}
 
