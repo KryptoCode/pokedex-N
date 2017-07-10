@@ -4,7 +4,13 @@ angular.module('pokedexN')
 		restrict: 'EA',
 		scope: {
 			health: '=',
-			name: '='
+			name: '=',
+            types: '=',
+            atk: '=',
+			def: '=',
+            speed: '=',
+            spAttack: '=',
+            spDefense: '='
 		},
 		templateUrl: 'directives/templates/battle.html'
 	}

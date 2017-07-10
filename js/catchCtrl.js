@@ -17,7 +17,21 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 					return result;
 				}
 			}; 
-
+	$scope.myPokemon = mainService.getPokemon($stateParams.id).then(function(response) {
+		$scope.myBuddy.buddyStats = {
+            stats: [
+                {name: 'speed', base_value: response.stats[0].base_stat},
+                {name: 'Special Def', base_value: response.stats[1].base_stat},
+                {name: 'Special Att', base_value: response.stats[2].base_stat},
+                {name: 'Defense', base_value: response.stats[3].base_stat},
+                {name: 'Attack', base_value: response.stats[4].base_stat},
+                {name: 'HP', base_value: response.stats[5].base_stat},
+                {name: 'id', base_value: response.id}
+            ],
+            types: response.type
+		}
+		console.log($scope.myBuddy);
+	})
 	var randomNumberGenerator = function(min, max) {
 		min = Math.ceil(min);
 		max = Math.floor(max);
@@ -39,12 +53,14 @@ angular.module('pokedexN').controller('catchCtrl', function($scope, mainService,
 					{name: 'HP', base_value: response.stats[5].base_stat},
 					{name: 'id', base_value: response.id}
 				],
+				types: response.type,
 				name: response.name,
 				image: 'images/sprites-master/sprites/pokemon/model/' + response.id + '.png'
 				};
 
 			$scope.fullHealth = response.stats[5];
 			$scope.pokemon.push(pokemonStats);
+			console.log($scope.pokemon);
 			$scope.voice = function(words) {
 				words = 'Pokedex index ' + response.id + ' you have found a ' + response.name + ' .. Be careful, trainer.';
 				responsiveVoice.speak(words , 'UK English Male');
