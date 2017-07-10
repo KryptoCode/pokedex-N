@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "8.0.0"
+  },
   "dependencies": {
     "angular-animate": "^1.5.9",
     "angular-ui-router": "^0.3.2",
