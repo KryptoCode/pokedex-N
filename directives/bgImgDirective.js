@@ -4,8 +4,8 @@ angular.module('pokedexN')
 		var url = attrs.bgImgDirective;
 		element.css({
 			'background-image': 'url(' + url + ')',
-			'background-size': 'cover',
 			'background-repeat': 'no-repeat',
+            'background-size': 'contain',
 			'background-position': 'center'
 		});
 	};

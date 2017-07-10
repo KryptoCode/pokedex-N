@@ -8,6 +8,12 @@ angular.module('pokedexN').service('mainService', function($http) {
 				url: 'https://pokeapi.co/api/v2/pokemon/' + nameId + '/',
 				cache: true
 			}).then(function(response) {
+				if(response.data.types) {
+                    response.data.type = [];
+					for(var i = 0; i < response.data.types.length; i++) {
+						response.data.type.push(response.data.types[i].type.name.toUpperCase());
+					}
+				}
 				return response.data;
 			})
 		}

@@ -3,3 +3,5 @@ node_modules
 .firebaserc
 public
 .idea
+server.js
+mongodb/
