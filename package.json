@@ -1,7 +1,7 @@
 {
   "name": "pokedex-n",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pokedex-N is a server-less, mobile-ready, AngularJS powered interactive recreation of the fictional Pokedex device found in the Pokemon series.",
   "main": "index.js",
   "engines": {
     "node": "8.0.0"
@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KryptoCode/pokedex-N.git"
+    "url": "git+https://github.com/REDedits/pokedex-N.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KryptoCode/pokedex-N/issues"
+    "url": "https://github.com/REDedits/pokedex-N/issues"
   },
-  "homepage": "https://github.com/KryptoCode/pokedex-N#readme"
+  "homepage": "https://github.com/REDedits/pokedex-N#readme"
 }
