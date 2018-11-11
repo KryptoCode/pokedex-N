@@ -7,10 +7,8 @@
 
 .top-dex {
 	height: 260px;
-	background-image: url('images/Pokedex_t_b.png');
-	background-repeat: no-repeat;
+	background: url(images/Pokedex_t_b.png) top no-repeat;
 	background-size: 100% 260px;
-	background-position: top;
 
 }
 
@@ -38,10 +36,8 @@
 
 .bottom-dex {
 	height: 260px;
-	background-image: url('images/Pokedex_t_b.png');
-	background-repeat: no-repeat;
+	background: url(images/Pokedex_t_b.png) top no-repeat;
 	background-size: 100% 260px;
-	background-position: top;
 	margin-bottom: 20px;
 	transform: scaleY(-1);
 }
@@ -56,18 +52,14 @@
 .random-bt {
 	width: 100px;
 	height: 100px;
-	background-image: url('images/pokeball-rand-bt.png');
-	background-size:contain;
-	background-position: center;
-	background-repeat: no-repeat;
+	background: url(images/pokeball-rand-bt.png) center no-repeat;
+	background-size: contain;
 	margin: auto;
 }
 
 .catchBg {
 	position: relative;
-	background-image: url('images/chooseBg.png');
-	background-repeat: no-repeat;
-	background-position: -10px center;
+	background: url(images/chooseBg.png) -10px center no-repeat;
 	background-size: cover;
 	height: 600px;
 	width: 100%;
@@ -81,9 +73,7 @@
 	left: 41%;
 	height: 140px;
 	cursor: pointer;
-	background-image: url('images/sprites-master/sprites/items/dream-world/dive-ball.png');
-	background-repeat: no-repeat;
-	background-position: left center;
+	background: url(images/sprites-master/sprites/items/dream-world/dive-ball.png) left center no-repeat;
 	background-size: contain;
 }
 
@@ -99,9 +89,7 @@
 	right: 70%;
 	height: 185px;
 	cursor: pointer;
-	background-image: url('images/sprites-master/sprites/items/dream-world/great-ball.png');
-	background-repeat: no-repeat;
-	background-position: right center;
+	background: url(images/sprites-master/sprites/items/dream-world/great-ball.png) right center no-repeat;
 	background-size: contain;
 }
 
@@ -116,9 +104,7 @@
 	left: 70%;
 	height: 186px;
 	cursor: pointer;
-	background-image: url('images/sprites-master/sprites/items/dream-world/repeat-ball.png');
-	background-repeat: no-repeat;
-	background-position: left center;
+	background: url(images/sprites-master/sprites/items/dream-world/repeat-ball.png) left center no-repeat;
 	background-size: contain;
 }
 
@@ -133,9 +119,7 @@
 	left: 39%;
 	height: 186px;
 	cursor: pointer;
-	background-image: url('images/sprites-master/sprites/items/dream-world/poke-ball.png');
-	background-repeat: no-repeat;
-	background-position: left center;
+	background: url(images/sprites-master/sprites/items/dream-world/poke-ball.png) left center no-repeat;
 	background-size: contain;
 }
 
@@ -150,9 +134,7 @@
 	left: 39%;
 	height: 186px;
 	cursor: pointer;
-	background-image: url('images/sprites-master/sprites/items/dream-world/master-ball.png');
-	background-repeat: no-repeat;
-	background-position: left center;
+	background: url(images/sprites-master/sprites/items/dream-world/master-ball.png) left center no-repeat;
 	background-size: contain;
 }
 
@@ -195,50 +177,45 @@
 .healthBar {
 	position: relative;
 	top: -50px;
-	height: 96px;
-	border: 3px solid rgba(255,255,255,0.5);
-	width: 260px;
-	margin: auto;
-	padding-left: 5px;
-	padding-right: 5px;
-	background-color: rgba(228,248,255,0.6);
+	height: 203px;
+	width: 311px;
+	background: url(images/pk-buddy-ui-bg.png) transparent center center no-repeat;
 	overflow: hidden;
 }
 
 .healthBar:before {
 	content: "";
 	width: 100%;
-	height: 200%;
 	top: -50%;
 	left: -20%;
 	position: absolute;
 	z-index: -1;
-	background: url("./images/pokeball-ui-bg.png");
-	background-repeat: no-repeat;
-	opacity: 0.4;
+
 }
 
-.healthBar > p {
-	margin: 0;
-	background-color: transparent;
-	font-weight: bold;
 
+
+.stat-container {
+	height: 108px;
+	width: 262px;
+	position: absolute;
+	top: 32px;
+	left: 38px;
+	background-color: rgba(255,255,255,0.5);
+	color: #31708f;
+	font-size: 0.9em;
+	font-weight: bold;
+	padding-top: 8px;
 }
 
 .progress {
 	height: 20px;
-	margin-bottom: 0px;
+	margin: 0 auto 8px auto;
 	background-color: rgba(255,255,255,0.7);
-	border: 1px solid #4f4f4f;
-}
-
-.stat-ui {
-	padding-top: 6px;
-	color: #31708f;
 }
 
 .stat-value {
-	color: #d9534f;
+	color: rgba(217, 83, 79, 1.0);
 }
 
 
@@ -343,9 +320,7 @@
 	background: linear-gradient(
       rgba(228, 248, 255, 0.45), 
       rgba(228, 248, 255, 0.45)
-    ), url('images/catch_stage.png');
-	background-position: center;
-	background-repeat: no-repeat;
+    ), url(images/catch_stage.png) center no-repeat;
 	background-size: cover;
 	height: 500px;
 }
@@ -355,15 +330,13 @@
 	position: relative;
 	top: 568px;
 	left: 160px;
-	background-image:url('images/fight-btn.png');
-	background-position: center;
-	background-repeat: no-repeat;
+	background:url(images/fight-btn.png) center no-repeat;
 	background-size: contain;
 	z-index: 6;
 }
 
 .buddy-fight-btn:hover {
-	background-image:url('images/fight-btn-on.png');
+	background:url(images/fight-btn-on.png);
 }
 
 .buddy-power-btn {
@@ -371,15 +344,13 @@
 	position: relative;
 	top: 507px;
 	left: 416px;
-	background-image:url('images/lightning-btn.png');
-	background-position: center;
-	background-repeat: no-repeat;
+	background:url(images/lightning-btn.png) center no-repeat;
 	background-size: contain;
 	z-index: 6;
 }
 
 .buddy-power-btn:hover {
-	background-image:url('images/lightning-btn-on.png');
+	background:url(images/lightning-btn-on.png);
 }
 
 #stage {
@@ -404,13 +375,13 @@
 
 	-webkit-animation-name: throw;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: linear;
+    -webkit-animation-iteration-count: inherit;
     -webkit-animation-direction: normal;
     -webkit-animation-duration: 1.8s;
    	
    	animation-name: throw;
     animation-timing-function: linear;
-    animation-iteration-count: linear;
+    animation-iteration-count: inherit;
     animation-direction: normal;
     animation-duration: 1.8s;
 
@@ -424,11 +395,11 @@
     border-radius: 90px;
 
     -webkit-animation-name: bounce;
-    -webkit-animation-iteration-count: linear;
+    -webkit-animation-iteration-count: inherit;
     -webkit-animation-duration: 1.8s;
 
     animation-name: bounce;
-    animation-iteration-count: linear;
+    animation-iteration-count: inherit;
     animation-duration: 1.8s;
   }
 
@@ -446,16 +417,15 @@
 
 	width: 60px;
 	height: 60px;
-	background: url('images/pokeballs_sprite.png') no-repeat;
+	background: url(images/pokeballs_sprite.png) no-repeat;
 	animation: play 0.8s steps(12) infinite;
 	z-index: 6;
 
 }
 
 @keyframes play {
-	100% { background-position: -768px 0px; }
+	100% { background-position: -768px 0; }
 	}
-}
 
 @-webkit-keyframes throw {
 	from { left: 360px;  }
@@ -586,8 +556,7 @@ phone size needs to be
 
 .youtubeImages {
 	height: 180px;
-	background-repeat: no-repeat;
-	background-position: center;
+	background: no-repeat center;
 	background-size: cover;
 	border: 5px solid #4cb1d3;
 
@@ -631,7 +600,7 @@ phone size needs to be
 	}
 
 		@keyframes play {
-			100% { background-position: -768px 0px; }
+			100% { background-position: -768px 0; }
 			
 		}
 
@@ -679,9 +648,7 @@ phone size needs to be
 		  }
 		  .catchBg {
 				position: relative;
-				background-image: url('images/chooseBg.png');
-				background-repeat: no-repeat;
-				background-position: -10px center;
+				background: url(images/chooseBg.png) -10px center no-repeat;
 				background-size: cover;
 				height: 400px;
 				width: 100%;
@@ -690,20 +657,18 @@ phone size needs to be
 
 			.chooser1 {
 				position: relative;
-				top: 0px;
+				top: 0;
 				left: 40%;
 				height: 121px;
 				cursor: pointer;
-				background-image: url('images/sprites-master/sprites/items/dream-world/dive-ball.png');
-				background-repeat: no-repeat;
-				background-position: left center;
+				background: url(images/sprites-master/sprites/items/dream-world/dive-ball.png) left center no-repeat;
 				background-size: contain;
 			}
 
 
 
 			.chooser1:hover {
-				background-image: url(images/dive-ball-open.png);
+				background: url(images/dive-ball-open.png);
 			}
 
 			.chooser2 {
@@ -712,9 +677,7 @@ phone size needs to be
 				right: 70%;
 				height: 150px;
 				cursor: pointer;
-				background-image: url('images/sprites-master/sprites/items/dream-world/great-ball.png');
-				background-repeat: no-repeat;
-				background-position: right center;
+				background: url(images/sprites-master/sprites/items/dream-world/great-ball.png) right center no-repeat;
 				background-size: contain;
 			}
 
@@ -729,9 +692,7 @@ phone size needs to be
 				left: 69%;
 				height: 150px;
 				cursor: pointer;
-				background-image: url('images/sprites-master/sprites/items/dream-world/repeat-ball.png');
-				background-repeat: no-repeat;
-				background-position: left center;
+				background: url(images/sprites-master/sprites/items/dream-world/repeat-ball.png) left center no-repeat;
 				background-size: contain;
 			}
 
@@ -746,9 +707,7 @@ phone size needs to be
 				left: 39%;
 				height: 186px;
 				cursor: pointer;
-				background-image: url('images/sprites-master/sprites/items/dream-world/poke-ball.png');
-				background-repeat: no-repeat;
-				background-position: left center;
+				background: url(images/sprites-master/sprites/items/dream-world/poke-ball.png) left center no-repeat;
 				background-size: contain;
 			}
 
@@ -763,9 +722,7 @@ phone size needs to be
 				left: 39%;
 				height: 186px;
 				cursor: pointer;
-				background-image: url('images/sprites-master/sprites/items/dream-world/master-ball.png');
-				background-repeat: no-repeat;
-				background-position: left center;
+				background: url(images/sprites-master/sprites/items/dream-world/master-ball.png) left center no-repeat;
 				background-size: contain;
 			}
 
@@ -788,9 +745,7 @@ phone size needs to be
 				transform: translateX(-50%);
 				height: 150px;
 				width: 150px;
-				background-image: url('images/sprites-master/sprites/pokemon/model/25.png');
-				background-position: center;
-				background-repeat: no-repeat;
+				background: url(images/sprites-master/sprites/pokemon/model/25.png) center no-repeat;
 				background-size: contain;
 			}
 
